@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./icon/favicon.ico" type="image/x-icon">
+    <title>Happy Annivasary</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/quietflow.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+	
+</head>
+<body>
+    <header>
+    <br><br>
+         <h1 class="title">Name + Name</h1>
+    </header>
+
+    <div class="container">
+        <div class="cover">
+            <div class="front">
+                <p class="hpy">Name</p>
+            </div>
+            <div class="back"></div>
+        </div>
+        <div class="cover2">
+            <div class="front2">
+                    <p class="hpy">Name</p>
+            </div>
+            <div class="back2"></div>
+        </div>
+        <p class="intro">To My Dear Aunt & Uncle <br> <i class="em em-heartpulse"></i></p>
+        <p class="content">Today Is A Special Day For You.<br><span class="frnd">Today Your Annivasary Day..<br>
+</span>Dear Aunt & Uncle<br>
+<span class="sis">Happy Annivasary Day..<br>
+</span></p>
+    </div>
+  
+    <script src="./js/main.js"></script>
+</body><script language=JavaScript>
+	
+	//Disable right mouse click Script
+	//By Geek Site.in
+	
+	
+	var message="❗ If You Try to do that Your Device will be Hacked!";
+	
+	///////////////////////////////////
+	function clickIE4(){
+	if (event.button==2){
+	alert(message);
+	return false;
+	}
+	}
+	
+	function clickNS4(e){
+	if (document.layers||document.getElementById&&!document.all){
+	if (e.which==2||e.which==3){
+	alert(message);
+	return false;
+	}
+	}
+	}
+	
+	if (document.layers){
+	document.captureEvents(Event.MOUSEDOWN);
+	document.onmousedown=clickNS4;
+	}
+	else if (document.all&&!document.getElementById){
+	document.onmousedown=clickIE4;
+	}
+	
+	document.oncontextmenu=new Function("alert(message);return false")
+	
+	</script>
+</html>
